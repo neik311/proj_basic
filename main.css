@@ -1,0 +1,91 @@
+/* reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+    ;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+    height: 2000px;
+    width: 100%;
+
+}
+#header{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    position: fixed;
+    top: 0;
+
+}
+#nav{
+}
+#nav  li{
+    display: inline-block ;
+    position: relative;
+}
+
+#nav >li >a{
+    text-transform :uppercase;
+
+}
+#nav li a{
+    color:white;
+    text-decoration: none;
+    line-height: 51px;
+    padding: 0px 24px;
+    display: inline-block;
+
+}
+#nav .sunav  li :hover ,#nav >li:hover> a{
+    color: black;
+    background-color: rgb(189, 189, 189);
+}
+#nav li:hover .sunav{
+    display: block;
+}
+#nav .sunav{
+    display: none;
+    color :black;
+    background-color: white;
+    position: absolute;
+    box-shadow: 0 0 10px rgb(102, 102, 102);
+}
+#nav .sunav a{
+    color :black;
+    width: 140px;
+    height: 40px;
+    padding-left: 20px;
+}
+.boxSearch:hover{
+    background-color: rgb(236, 46, 46);
+}
+.boxSearch{
+    height: 50px;
+    width: 60px;
+    color: white;
+    background-color :black;
+    margin-left: 800px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.ti-search{
+    font-size: 20px;
+    
+}
+
+#slider{
+    min-height: 500px;
+    background-color: white
+
+}
+#content{
+
+}
+#footer{
+
+}
