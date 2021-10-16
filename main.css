@@ -9,7 +9,7 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 #main{
-    height: 2000px;
+    height: 3000px;
     width: 100%;
 
 }
@@ -23,8 +23,11 @@ html{
 
 }
 #nav{
+    display: inline-block;
+    width: 96%;
+    
 }
-#nav  li{
+#nav li{
     display: inline-block ;
     position: relative;
 }
@@ -66,12 +69,13 @@ html{
 }
 .boxSearch{
     height: 50px;
-    width: 60px;
+    width: 67px;
     color: white;
+    float: right;
     background-color :black;
-    margin-left: 800px;
+    margin-left: 0px;
     padding-top: 15px;
-    padding-left: 20px;
+    padding-left: 24px;
 }
 .ti-search{
     font-size: 20px;
@@ -79,7 +83,11 @@ html{
 }
 
 #slider{
-    min-height: 500px;
+    background-image: url(./sub/slider_avatar.jpg);
+    width: 100%;
+    height: 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: white
 
 }
