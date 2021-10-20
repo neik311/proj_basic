@@ -1,4 +1,9 @@
 /* reset*/
+/*
+opacity : làm mờ
+letter-spacing : làm rộng chữ
+
+*/
 *{
     padding: 0;
     margin: 0;
@@ -6,14 +11,14 @@
     ;
 }
 html{
+    scroll-behavior:smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
 #main{
-    height: 3000px;
     width: 100%;
-
 }
 #header{
+    z-index: 2;
     height: 50px;
     width: 100%;
     background-color: black;
@@ -83,17 +88,292 @@ html{
 }
 
 #slider{
-    background-image: url(./sub/slider_avatar.jpg);
-    width: 100%;
-    height: 20%;
+    z-index: 1;
+    position: relative;
+    background-image: url(./sub/newYork.jpg);
+    margin-top: 50px;
+    padding-top: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: white
-
+}
+.text-content{
+    color: white;
+}
+.text01{
+    position: absolute;
+    left: 50%;
+    bottom: 80px;
+    transform: translateX(-50%);
+    font-size: 25px;
+}
+.text02{
+    position: absolute;
+    left: 50%;
+    bottom: 45px;
+    transform: translateX(-50%);
+    font-size:18px;
 }
 #content{
+}
+#content .star{
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .headline{
+ text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing :3px;
+}
+#content .mylove{
+    text-align: center;
+    margin-bottom: 25px;
+    opacity: 0.5;
+}
+#content .mytext{
+    width: 765px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:justify;
+    font-size: 15px;
+    line-height: 1.4;
+}
+.name-style{
+    margin-top: 10px;
+    margin-bottom:90px;
+    display: flex;
+    width: 768px;
+    height: 211px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.name-people{
+    width: 256px;
+    height: 222px;
+}
+.style-img{
+    margin-top: 15px;
+    width: 154px;
+    height: 154px;
+}
+.base-tour{
+    width: 100%;
+   height: 850px;
+   background-color: black;
+}
+.tour-dates{
+   width: 770px;
+   height: 850px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 16px;
+   padding-right: 16px;
+}
+.name-tour{
+    margin-bottom: 45px;
+}
+.name-tour .text-tour{
+    padding-top: 64px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 3px;
+}
+.name-tour .text-tour02{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+    opacity: 0.5;
+}
+.time-tour{
+  width: 100%;
+  height: 39px;
+  background-color: white;
+  border-bottom: 1px solid rgb(175, 175, 175);
+}
+.number-three{
+    margin-left: 565px !important ;
+    padding: 3px 8px !important;
+    width: 24px;
+    height: 24px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.time-tour >p{
+    margin-left: 12px;
+    margin-top: 7px;
+    padding: 3px 10px;
+   display:inline-block;
+}
+.time-01{
+    color: black;
+    opacity: 0.9;
+}
+.sold-out{
+    color:white;
+    background-color: rgb(238, 48, 48);
+}
+.city-tour{
+  
+  margin-top: 20px;
+  width: 750px;
+  height: 400px;
+  display:flex;
+  
+}
+.city-tour .city-number1{
+    background-color:white;
+    width: 235px;
+    height: 250px;
+}
+.city-tour .city-number2{
+    background-color:white;
+    width: 235px;
+    height: 250px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.city-tour .city-number3{
+    background-color:white;
+    width: 235px;
+    height: 250px;
+   
+}
+.city-tour  img{
+    width: 235px;
+    height: 184px;
+}
+.city-end{
+
+    width: 235px;
+    height: 200px;
+    background-color: white;
+}
+
+.city-tour .city-end b ,.city-tour .city-end p {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 23px;
+    color: black; 
+}
+.city-end .style-text1{
+    opacity: 0.6;
+    font-size: 15px;
+}
+.city-end .buy-tour:hover{
+    background-color:rgb(190, 190, 190);
+    color: black;
+}
+.city-end .buy-tour{
+    padding: 10px 12px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    border-radius: 3%;
+}
+/*contact*/
+.star-contact{
+    padding-top: 70px;
+    height: 350px;
 
 }
+.name-contact{
+    text-align: center;
+}
+.name-contact p{
+    font-size: 30px;
+    letter-spacing:4px;
+}
+.name-contact i{
+    opacity: 0.5;
+}
+.info-contact{
+    margin-top: 50px;
+    width: 770px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.name-info{
+    width: 50%;
+    height: 100%;
+}
+.name-info p{
+   display:block;
+   font-size: 18px;
+   margin-bottom: 7px;
+   color: rgb(0, 0, 0);
+}
+.name-info i{
+    margin-right: 12px;
+}
+.write-info{
+    width: 50%;
+    height: 100%;
+}
+.begin-input input{
+    width: 180px;
+    margin-bottom: 8px;
+    margin-right: 7px;
+    padding: 10px 5px;
+    border: 1px solid rgb(182, 181, 181);
+}
+.end-input input{
+    width: 370px;
+    padding: 10px 2px;
+    border: 1px solid rgb(179, 179, 179);
+}
+.send-contact:hover {
+    background-color: rgb(119, 118, 118);
+    color:black
+}
+.send-contact{
+    width: 62px;
+    height: 38px;
+    background-color: black;
+    margin-top: 10px;
+    margin-left: 308px;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+    line-height: 38px;
+}
+.style-city{
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+}
 #footer{
-
+    margin-top: 50px;
+    width: 200px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+#footer a{
+    text-decoration: none;
+    color: black;
+    margin-right: 5px;
+    font-size: 22px;
+}
+#info-progamer{
+    width: 300px;
+    font-size: 17px;
+    opacity: 0.6;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
 }
