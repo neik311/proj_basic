@@ -11,6 +11,8 @@
 <body>
     <div id ="main">
         <div id ="header">
+            <div class="ti-view-list">
+            </div>
             <ul id="nav">
                 <li><a href="#">Home</a></li>
                 <li><a href="#band">Band</a></li>
@@ -27,7 +29,8 @@
             </ul>
            <div class="boxSearch">
                 <i class ="ti-search"></i>
-            </div>
+            </div> 
+           
         </div>
         <div id ="slider">
            <div class="text-content">
@@ -157,5 +160,17 @@
         </div>
         </div>
     </div>
+    <script>
+        var header =document.getElementById('nav');
+        var menu = document.getElementsByClassName('ti-view-list')[0];
+        menu.onclick = function(){
+            if(header.style.display == 'inline-block'){
+                header.style.display = 'none';
+            }
+            else{
+                header.style.display = 'inline-block';
+            }
+        }
+    </script>
 </body>
 </html>

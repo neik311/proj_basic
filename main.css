@@ -16,6 +16,7 @@ html{
 }
 #main{
     width: 100%;
+
 }
 #header{
     z-index: 2;
@@ -39,7 +40,6 @@ html{
 
 #nav >li >a{
     text-transform :uppercase;
-
 }
 #nav li a{
     color:white;
@@ -52,6 +52,7 @@ html{
 #nav .sunav  li :hover ,#nav >li:hover> a{
     color: black;
     background-color: rgb(189, 189, 189);
+    transition: all 0.2s;
 }
 #nav li:hover .sunav{
     display: block;
@@ -71,6 +72,16 @@ html{
 }
 .boxSearch:hover{
     background-color: rgb(236, 46, 46);
+    transition: all 0.2s;
+}
+.ti-view-list{
+    display: none;
+    height: 50px;
+    width: 62px;
+    float: right;
+    color: white;
+    padding: 15px 20px;
+    font-size: 20px;
 }
 .boxSearch{
     height: 50px;
@@ -136,6 +147,7 @@ html{
 }
 #content .mytext{
     width: 765px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align:justify;
@@ -169,6 +181,7 @@ html{
 .tour-dates{
    width: 770px;
    height: 850px;
+   max-width: 100%;
    margin-left: auto;
    margin-right: auto;
    padding-left: 16px;
@@ -192,14 +205,16 @@ html{
     opacity: 0.5;
 }
 .time-tour{
+  position: relative;
   width: 100%;
   height: 39px;
   background-color: white;
   border-bottom: 1px solid rgb(175, 175, 175);
 }
 .number-three{
-    margin-left: 565px !important ;
-    padding: 3px 8px !important;
+    position: absolute;
+    right: 30px;
+    padding-left: 8px !important;
     width: 24px;
     height: 24px;
     color: white;
@@ -226,6 +241,8 @@ html{
   margin-top: 20px;
   width: 750px;
   height: 400px;
+  max-width: 100%;
+
   display:flex;
   
 }
@@ -252,7 +269,6 @@ html{
     height: 184px;
 }
 .city-end{
-
     width: 235px;
     height: 200px;
     background-color: white;
@@ -283,6 +299,7 @@ html{
 }
 /*contact*/
 .star-contact{
+    margin-top: 0px;
     padding-top: 70px;
     height: 350px;
 
@@ -376,4 +393,135 @@ html{
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 50px;
+}
+
+@media (max-width:840px){
+    #header{
+        display: inline;
+    }
+    #header li {
+        width: 100%;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .text-content  , #header .boxSearch ,#nav{
+        display: none;
+    }
+    #header #nav{
+        height: 250px;
+        width: 100%;
+        background-color:rgb(26, 21, 21) ;
+    }
+    #nav li{
+        text-align: center;
+    }
+    #nav >li >a{
+        padding-left: 44%;
+        display:flex;
+        transform: translateX(-0.5);
+    }
+    #nav .sunav {
+        width: 100%;
+        background-color: rgb(248, 248, 248);
+        color: white !important;
+    }
+    #nav .sunav li:hover{
+          background-color: rgb(190, 190, 190);
+          color: black;
+    }
+    .ti-arrow-circle-down{
+        padding-top: 16px;
+        padding-left: 5px;
+    }
+    #header .ti-view-list{
+        display:block;
+    }
+    .ti-view-list:hover{
+        background-color: rgb(61, 61, 160);
+    }
+    .name-style{
+        display: inline ;
+    }
+    .name-people{
+        width: 100% ;     
+    }
+    .tour-dates{
+        height: auto ;
+        background-color: black;
+    }
+    #content{
+        display: inline;
+    }
+    .base-tour{
+        height: auto;
+        padding-bottom: 80px;
+        background-color:black ;
+    }
+    .city-tour{
+      display: inline ;
+    }
+    .city-tour .city-number1{
+        width:100% ;
+        height: auto;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color:white;
+    }
+    .city-tour .city-number2{
+        width:100% ;
+        height: auto;
+        margin: 20px auto;
+    }
+    .city-tour .city-number3{
+        width:100% ;
+        height: auto;
+        margin: 20px auto;
+    }
+    .city-tour .city-end{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        background-color:white;
+    }
+    .city-tour .buy-tour{
+        margin-bottom: 20px;
+    }
+    .city-tour img{
+        width: 100% ;
+        height: 80% ;
+    }
+    .star-contact{
+        height: auto;
+    }
+    .star-contact .name-contact{
+        padding-bottom: 50px;
+    }
+    .star-contact .info-contact{
+        display: inline;   
+    }
+    .star-contact .name-info{
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 20px;
+    }
+    .star-contact .write-info{
+        position: relative;
+        width: 100%;
+        padding-left: 15px;
+    }
+    .write-info .send-contact{
+        position: absolute;
+        right: 7%;
+    }
+    .begin-input input {
+        width:93% ;
+        margin:0;
+    }
+    .end-input input{
+        margin-top: 10px;
+        width: 93%;
+    }
 }
