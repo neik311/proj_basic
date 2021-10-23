@@ -404,7 +404,7 @@ html{
         margin-left: auto !important;
         margin-right: auto !important;
     }
-    .text-content  , #header .boxSearch ,#nav{
+    .text-content, #header .boxSearch ,#nav{
         display: none;
     }
     #header #nav{

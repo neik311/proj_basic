@@ -34,8 +34,18 @@
         </div>
         <div id ="slider">
            <div class="text-content">
-                <p class="text01">New York</p>
-                <p class="text02">The atmosphere in New York s lorem ipsum</p>
+               <div class =text-style>
+                  <p class="text01">New York</p>
+                  <p class="text02">The atmosphere in New York s lorem ipsum</p>
+                </div>
+                <div class =text-style>
+                    <p class="text01">Chicago</p>
+                    <p class="text02">Thank you, Chicago - A night we won't forget.</p>
+                  </div>
+                  <div class =text-style>
+                    <p class="text01">Los Angeles</p>
+                    <p class="text02">We had the best time playing at Venice Beach!</p>
+                  </div>
             </div>
         </div>
         <div id ="content">
@@ -171,6 +181,25 @@
                 header.style.display = 'inline-block';
             }
         }
+        var slider =document.getElementById('slider') , index = 0;
+        var imgs =[' url(./sub/newYork.jpg)', ' url(./sub/losA.jpg)','url(./sub/chicago.jpg)']
+        var textImg=document.getElementsByClassName('text-style');
+        changeImg =function(){
+               slider.style.backgroundImage =imgs[index];
+               for(var i=0;i<3;i++){
+                   if(i==index){
+                       textImg[i].style.display = 'block';
+                   }
+                   else{
+                       textImg[i].style.display = 'none';
+                   }
+               }
+               index++;
+               if (index >=3){
+                   index =0;
+               }
+        }
+        setInterval(changeImg,4000);
     </script>
 </body>
 </html>
